@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- text animation -->
+    <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+    <!-- text animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+   
+   <style>
+    .navbar{
+      position: fixed;
+      z-index: 100000;
+      width: 100%;
+    }
+  .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+        color: white;
+        background: #803035;
+        border-radius: 5px;
+    }
+  .navbar-light .navbar-nav .nav-link {
+      color: #803035;
+      font-size: 19px;
+      font-weight: 500;
+      font-family: 'Roboto';
+      cursor: pointer;
+
+  }
+    .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+        color: white;
+        background: #803035;
+        border-radius: 5px;
+    }
+    .nav-item{
+      margin-left: 12px;
+    }
+    
+
+    
+
+/* styling svg text starts*/
+
+svg {
+	font-family: 'Russo One', sans-serif;
+	
+	width: 100%; height: 19%;
+}
+svg text {
+	text-transform: uppercase;
+	animation: stroke 5s infinite alternate;
+	stroke-width: 2;
+	stroke: #803035;
+	font-size: 100px;
+}
+@keyframes stroke {
+	0%   {
+		fill: rgba(72,138,20,0); stroke: #803035;
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+	}
+	70%  {fill: rgba(72,138,20,0); stroke: #803035; }
+	80%  {fill: rgba(72,138,20,0); stroke: #803035; stroke-width: 3; }
+	100% {
+		fill: #803035; stroke: rgba(54,95,160,0); 
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+	}
+}
+/* styling svg text ends */
+
+    </style>
+<body>
+   <nav class="navbar navbar-expand-lg navbar-light ">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">IIT</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#intro">Introduction</a>
+        </li>
+        <!-- <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#Experience" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Experience
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Before</a></li>
+            <li><a class="dropdown-item" href="#">During</a></li>
+            <li><a class="dropdown-item" href="#">Problems</a></li>
+            <li><a class="dropdown-item" href="#">Now</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li> -->
+        <li class="nav-item">
+          <a class="nav-link" href="#Experience">Accomplishments</a>
+      </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#Team">Team Work</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#Activites">Activites</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#Future">Future</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Thanks">Thank You</a>
+          </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link disabled">Disabled</a>
+        </li> -->
+      </ul>
+      <!-- <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form> -->
+    </div>
+  </div>
+</nav>
+
+      <div class="weldiv" id="home">
+          <!-- <span class="welcome"> 
+                <div class="wel">Welcome to the present moment.</div> 
+                <div class="wel">Here. Now.</div> 
+                <div class="wel">The only moment there ever is</div>
+          </span> -->
+          <div class="sp-container">
+              <div class="sp-content">
+                <div class="sp-globe"></div>
+                <h2 class="frame-1">A Warm</h2>
+                <h2 class="frame-2">WELCOME </h2>
+                <h2 class="frame-3">TO YOU</h2>
+                <h2 class="frame-4">RESPECTED SIR</h2>
+                <h2 class="frame-5">
+                  <span>ITS LOVELY  </span>
+                  <span>TO HAVE YOU .</span>
+                  <span>INTELLECT INFOTRADE</span>
+                </h2>
+                <span class="sp-circle-link">Created By Nausheen | <span class="far fa-copyright"></span> 2022 All rights reserved.</span>
+                </a>
+              </div>
+            </div>
+        </div>
+
+        <div id="intro" style="padding-top: 112px;
+        ">
+          <!-- <div class="cell">
+            <div class="circle bounce-in-right"></div>
+            <p>bounce in right</p>
+          </div> -->
+            <!-- <div class="introtitle">Introduction</div> -->
+            <svg viewBox="0 0 1320 300">
+              <text x="20%" y="50%" dy=".35em" text-anchor="middle">
+               Introduction
+              </text>
+            </svg>	
+          <div class="introbox">
+              
+              <div class="naushintro">
+                  I'm Nausheen Sayyed working as Python/Django Developer .I'm interersted in
+                  learning new things, cooking, acting, singing etc.I have done my graduation 
+                  in Bsc in physics after graduation I move in IT field for enhancing my skills 
+                  and for creating my future in IT industry.
+               </div>
+          </div>
+        </div>
+
+        <div id="Experience" style="padding-top: 79px;">
+          <svg viewBox="0 0 1320 300">
+            <text x="50%" y="50%" dy=".35em" text-anchor="middle">
+              Accomplishments
+            </text>
+
+            <div class="main-accomp-container">
+                <div class="accomp">
+                  <div class="work">
+                      <img src="Images/skylog.png" alt="">
+                  </div>
+                  <span class="accomp_heading">
+                    SKYCRM
+                  </span>
+                  <div class="sky_summary">
+                    <ul>
+                      <li>Responsive Website</li>
+                      <li>Jquery(Dynamic Behaviour)</li>
+                      <li>Learned How to Solve Logical Problems</li>
+                      <li>Worked for New Requirements</li>
+                      <li>Integrate Dailer in CRM</li>
+                      <li>Worked on Dashboard Report</li>
+                    </ul>
+                  </div>
+              </div>
+              <div class="accomp">
+                <div class="work" style="font-size: 33px;color:#803035;">
+                  <i class="fa-solid fa-gears"></i>
+                </div>
+                <span class="accomp_heading">
+                  API
+                </span>
+                <div class="sky_summary">
+                  <ul>
+                    <li>API Integration</li>
+                    <li>CRUD Operation Using API</li>
+                    <li>Learned how to modify API Response</li>
+                  </ul>
+                </div>
+            </div>
+            <div class="accomp">
+              <div class="work" style="font-size: 33px; color:#803035;">
+                <i class="fa-solid fa-hard-drive"></i>
+              </div>
+              <span class="accomp_heading">
+               MQTT & SYNWAY
+              </span>
+              <div class="sky_summary">
+                <ul>
+                  <li>MQTT Connection</li>
+                  <li>Synway API</li>
+                  <li>Cron job scheduler</li>
+                  <li>Learned Little about Webrtc</li>
+                </ul>
+              </div>
+            </div>
+            <div class="accomp">
+              <div class="work">
+                <i><img src="Images/dialer icon.svg" alt=""></i>
+              </div>
+              <span class="accomp_heading">
+                DIALER & SERVER
+              </span>
+              <div class="sky_summary">
+                <ul>
+                  <li>worked with disposition,create campaing</li>
+                  <li>worked with many servers</li>
+                  <li>worked with Team</li>
+                  <li>Manage Team task</li>
+                  <li>Deploy projects on server</li>
+                 
+                </ul>
+              </div>
+            </div>
+        </div>
+              <!-- <div class="work" style="background-color: brown;">
+                  red
+              </div>
+              <div class="work" style="background-color: blue;">
+                  RED
+              </div> -->
+
+        </div>
+
+        <div id="Team" style="height: 100%;padding-top: 31px;">
+          <svg viewBox="0 0 1900 100">
+            <text x="50%" y="50%" dy=".35em" text-anchor="middle">
+            Team Work
+            </text>
+          </svg>	
+            <!-- about -->
+          <div class="about">
+            <a class="bg_links social portfolio" href="https://www.rafaelalucas.com" target="_blank">
+              <span class="icon"></span>
+            </a>
+            <a class="bg_links social dribbble" href="https://dribbble.com/rafaelalucas" target="_blank">
+              <span class="icon"></span>
+            </a>
+            <a class="bg_links social linkedin" href="https://www.linkedin.com/in/rafaelalucas/" target="_blank">
+              <span class="icon"></span>
+            </a>
+            <a class="bg_links logo"></a>
+          </div>
+          <!-- end abo ut -->
+          
+
+          <div class="cards">
+          
+
+            <div class="card">
+              <span class="close"></span>
+              <span class="arrow"></span>
+              <article>
+                <h2>Sapna Maam</h2>
+                <div class="title">HR </div>
+                <div class="pic"><img src="Images/maam.jpeg"></div>
+  
+                <div class="desc">Very calm and carring like a mother and  always there to motivate us</div>
+  
+              </article>
+              <!-- <div class="actions">
+                <button class="btn"><span>like</span><img class="icon" src="https://rafaelavlucas.github.io/assets/icons/misc/heart.svg"></button>
+                <button class="btn"><span>trade</span><img class="icon" src="https://rafaelavlucas.github.io/assets/icons/misc/trade.svg"></button>
+  
+              </div> -->
+            </div>
+            <div class="card">
+            <span class="close"></span>
+            <span class="arrow"></span>
+            <article>
+              <h2>Ravindra Vara</h2>
+              <div class="title">Team Leader</div>
+              <div class="pic"><img src="Images/ravisir.jpeg"></div>
+
+              <div class="desc">Supportive ,helpfull but get angry to instantly good team leader.</div>
+
+            </article>
+            <!-- <div class="actions">
+              <button class="btn"><span>like</span><img class="icon" src="https://rafaelavlucas.github.io/assets/icons/misc/heart.svg"></button>
+              <button class="btn"><span>trade</span><img class="icon" src="https://rafaelavlucas.github.io/assets/icons/misc/trade.svg"></button>
+
+            </div> -->
+          </div>
+
+          <div class="card">
+            <span class="close"></span>
+            <span class="arrow"></span>
+            <article>
+              <h2>Rakesh Rao</h2>
+              <div class="title">Support Engineer</div>
+              <div class="pic"><img src="Images/rakesh.jpeg"></div>
+
+              <div class="desc">Good nature have a great communication skill calm and an Excel master .</div>
+
+            </article>
+            <!-- <div class="actions">
+              <button class="btn"><span>like</span><img class="icon" src="https://rafaelavlucas.github.io/assets/icons/misc/heart.svg"></button>
+              <button class="btn"><span>trade</span><img class="icon" src="https://rafaelavlucas.github.io/assets/icons/misc/trade.svg"></button>
+
+            </div> -->
+          </div>
+
+          <div class="card">
+            <span class="close"></span>
+            <span class="arrow"></span>
+            <article>
+              <h2>Nimesh Vishwakarma</h2>
+              <div class="title">Python Developer</div>
+              <div class="pic"><img src="Images/nimesh.jpeg"></div>
+
+              <div class="desc">Well supportive helpful Nature have a great knoweledge of logics.</div>
+
+            </article>
+            <!-- <div class="actions">
+              <button class="btn"><span>like</span><img class="icon" src="https://rafaelavlucas.github.io/assets/icons/misc/heart.svg"></button>
+              <button class="btn"><span>trade</span><img class="icon" src="https://rafaelavlucas.github.io/assets/icons/misc/trade.svg"></button>
+
+            </div> -->
+          </div>
+          <div class="card">
+            <span class="close"></span>
+            <span class="arrow"></span>
+            <article>
+              <h2>Aditya Jha</h2>
+              <div class="title">Python Developer</div>
+              <div class="pic"><img src="Images/aditya.jpeg"></div>
+
+              <div class="desc">Good in frontend technology always try to learn and perform task very well.</div>
+
+            </article>
+            <!-- <div class="actions">
+              <button class="btn"><span>like</span><img class="icon" src="https://rafaelavlucas.github.io/assets/icons/misc/heart.svg"></button>
+              <button class="btn"><span>trade</span><img class="icon" src="https://rafaelavlucas.github.io/assets/icons/misc/trade.svg"></button>
+
+            </div> -->
+          </div>
+          </div>
+        </div>
+
+        <div id="Activites" style="padding-top: 31px">
+
+          <svg viewBox="0 0 1900 100">
+            <text x="50%" y="50%" dy=".35em" text-anchor="middle">
+            Activities
+            </text>
+          </svg>
+
+          <div class="act">
+            <div class="act_f" style="background: rebeccapurple;"><img src="Images/act1.jpeg" alt="" class="actimg"></div>
+            <div class="act_f" style="background-color: cadetblue;"><img src="Images/act2.jpeg" alt="" class="actimg"></div>
+            <div class="act_f" style="background-color: aquamarine;"><img src="Images/act4.jpeg" alt="" class="actimg"></div>
+
+          </div>
+          <div class="act" style="margin-top: 60px;">
+            <div class="act_f" style="background-color: bisque;"><img src="Images/act3.jpeg" alt="" class="actimg"></div>
+            <div class="act_f" style="background-color: blanchedalmond;"><img src="Images/act5.jpeg" alt="" class="actimg"></div>
+            <div class="act_f" style="background-color: burlywood;"><img src="Images/act6.jpeg" alt="" class="actimg"></div>
+          </div>
+
+        </div>
+        <div id="Future" >
+          <svg viewBox="0 0 1900 100">
+            <text x="50%" y="50%" dy=".35em" text-anchor="middle">
+            Future
+            </text>
+          </svg>
+          <div class="future_plan">
+              <div class="fimg">
+                  <img src="Images/trophy.jpg" alt="" style="width: 100%;height:100%;">
+              </div>
+              <div class="fplan" >
+                <ul class="ul" style="width: 90%;margin: auto;">
+                  <li>My long-term goals involve growing with a company where I can continue to learn, take on additional responsibilities, and contribute as much value as possible to the team. I love that your company emphasizes professional development opportunities.</li>
+                  <li>Want to learn new Technologies  </li>
+                  <li>I want to implement webRTC and other things which help us in our product </li>
+                  <li>Want to work on new challanging projects to increase my logic algorithms</li>
+                  <li>Learn about how to create packages on live</li>
+                </ul>
+             
+              </div>
+          </div>
+
+        </div>
+        
+        <div id="Thanks">
+          <svg viewBox="0 0 1900 100">
+            <text x="50%" y="50%" dy=".35em" text-anchor="middle">
+           THANK YOU !!!!
+            </text>
+          </svg>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js"></script> -->
+        <script>
+            $('.nav-link').click(function(){
+              $('.nav-link').each(function(){
+                $(this).removeClass("active")
+              })
+              $(this).addClass('active')
+              
+            })
+           $(document).ready(function() {
+        //   $(".title").lettering();
+        //   $(".button").lettering();
+        // });
+        
+        
+        
+        
+        
+        // $(document).ready(function() {
+        //   animation();
+        // }, 1000);
+        
+        // $('.button').click(function() {
+        //   animation();
+        // });
+        
+        
+        // function animation() {
+        //   var title1 = new TimelineMax();
+        //   title1.to(".button", 0, {visibility: 'hidden', opacity: 0})
+        //   title1.staggerFromTo(".title span", 0.5, 
+        //   {ease: Back.easeOut.config(1.7), opacity: 0, bottom: -80},
+        //   {ease: Back.easeOut.config(1.7), opacity: 1, bottom: 0}, 0.05);
+        //   title1.to(".button", 0.2, {visibility: 'visible' ,opacity: 1})
+        // 
+           })
+        
+        
+          //  cards animation effects starts
+          var closeBtn = document.querySelectorAll(".close"),
+            card = document.querySelectorAll(".card"),
+            btnActions = document.querySelectorAll(".btn");
+        
+        closeBtn.forEach(function(el) {
+          el.addEventListener("click", closeCard);
+        });
+        
+        card.forEach(function(el) {
+          el.addEventListener("click", openCard);
+        });
+        
+        btnActions.forEach(function(el) {
+          el.addEventListener("click", clickBtn);
+        });
+        
+        function closeCard(event) {
+          event.stopPropagation();
+          event.target.closest(".card").classList.add("closed");
+        
+        }
+        
+        function openCard(event) {
+          if (event.currentTarget.classList.contains("closed")) {
+            event.currentTarget.classList.remove("closed");
+          } 
+        }
+        
+        function clickBtn(event) {
+          if (event.currentTarget.classList.contains("clicked")) {
+            event.currentTarget.classList.remove("clicked");
+          } else {
+            event.currentTarget.classList.add("clicked");
+          }
+        }
+        
+          // cards animation effects ends
+        </script>
+
+</body>
+
+</html>
